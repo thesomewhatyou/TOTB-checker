@@ -1,5 +1,5 @@
 
-# Dandy's World Twisted Oracle Bot 🔮
+# Dandy's World Twisted On The Board Bot 🔮
 
 Ever missed out on knowing the Daily Twisted character in Dandy's World? This friendly Discord bot is here to help! It keeps an eye on the [Dandy's World Wiki's Daily Twisted Board](https://dandys-world-robloxhorror.fandom.com/wiki/Daily_Twisted_Board) and automatically tells your Discord server when the character changes. It even shows you a picture of the character!
 
@@ -400,6 +400,6 @@ To use it:
 5.  Run `python bot.py`.
 Enjoy knowing who's Twisted!
 
-*This bot is an open-source fan project and is not officially affiliated with Dandy's World or its creators.*
-*Bot created with help from Jules from Google.*
-*Last updated: July 2, 2025*
+i am suffering
+
+This is not affiliated with BlushCrunch studios and if infringing can be taken down.
