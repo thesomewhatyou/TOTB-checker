@@ -155,12 +155,7 @@ A Python Discord bot that monitors the Daily Twisted Board from the Dandy's Worl
 ## 🌐 Project Website
 
 A user-friendly website describing the project, its features, and setup instructions is available via GitHub Pages. You can typically find it at:
-
-`https://<YOUR_USERNAME>.github.io/<REPOSITORY_NAME>/`
-
-(Replace `<YOUR_USERNAME>` and `<REPOSITORY_NAME>` with the appropriate values.)
-
-The site is generated from the files in the `docs/` directory.
+[https://thesomewhatyou.github.io/blablablathisisn'ttherealurl](https://thesomewhatyou.github.io/TOTB-checker/)
 
 ## 🚀 Quick Start
 
@@ -183,7 +178,7 @@ The site is generated from the files in the `docs/` directory.
    Recommended: Create a virtual environment first.
    ```bash
    python -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`, for Unix do the directed command
    ```
    Then install from `requirements.txt`:
    ```bash
