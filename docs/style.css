@@ -1,0 +1,244 @@
+/* General Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background: #35424a; /* Dark blue-grey */
+    color: #ffffff;
+    padding: 2rem 0;
+    text-align: center;
+    border-bottom: #e8491d 3px solid; /* Orange accent */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+header .subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 0.5rem;
+}
+
+/* Navigation Styles */
+nav {
+    background: #2c3a41; /* Slightly lighter than header */
+    color: #fff;
+    padding: 0.8rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav .container {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+nav a:hover, nav a:focus {
+    color: #e8491d; /* Orange accent for hover */
+}
+
+/* Main Content Sections */
+main section {
+    padding: 3rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+main section:last-child {
+    border-bottom: none;
+}
+
+main section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #35424a;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(rgba(53, 66, 74, 0.8), rgba(53, 66, 74, 0.8)), url('https://via.placeholder.com/1500x600.png?text=Dandy%27s+World+Bot+Background') no-repeat center center/cover; /* Replace with an actual cool background */
+    color: #fff;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+#hero h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+#hero p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #e8491d;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.cta-button:hover {
+    background: #d04017; /* Darker orange */
+}
+
+/* Features Section */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.feature-item {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.feature-item h3 {
+    color: #e8491d;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+/* Alternate Background Sections */
+.alternate-bg {
+    background-color: #ffffff;
+}
+
+/* Quick Start and How It Works Sections */
+#quick-start ol, #how-it-works ul {
+    list-style-position: inside;
+    padding-left: 20px;
+}
+
+#quick-start li, #how-it-works li {
+    margin-bottom: 0.8rem;
+}
+
+.code-block {
+    display: block;
+    background: #2c3a41; /* Dark background for code */
+    color: #f4f4f4;      /* Light text for code */
+    padding: 1rem;
+    margin: 0.5rem 0 1rem 0;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre-wrap; /* Allows wrapping */
+    word-break: break-all;
+}
+
+pre.code-block code { /* For the .env example */
+    white-space: pre;
+    display: block;
+}
+
+
+/* Footer Styles */
+footer {
+    background: #35424a;
+    color: #a9a9a9; /* Lighter grey for footer text */
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer .small-text {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+/* Utility Classes */
+.small-text {
+    font-size: 0.9rem;
+    color: #777;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+/* Responsive Design */
+@media(max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+    header .subtitle {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #hero h2 {
+        font-size: 2.2rem;
+    }
+    #hero p {
+        font-size: 1.1rem;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr; /* Stack features on smaller screens */
+    }
+}

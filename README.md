@@ -12,25 +12,47 @@ A Python Discord bot that monitors the Daily Twisted Board from the Dandy's Worl
 - **Role Pinging**: Configurable role and user mentions for announcements
 - **Robust Error Handling**: Comprehensive logging and graceful failure recovery
 
+## 🌐 Project Website
+
+A user-friendly website describing the project, its features, and setup instructions is available via GitHub Pages. You can typically find it at:
+
+`https://<YOUR_USERNAME>.github.io/<REPOSITORY_NAME>/`
+
+(Replace `<YOUR_USERNAME>` and `<REPOSITORY_NAME>` with the appropriate values.)
+
+The site is generated from the files in the `docs/` directory.
+
 ## 🚀 Quick Start
 
 ### Prerequisites
 
 - Python 3.8+
 - Discord Bot Token
-- Discord Channel ID for announcements, plus a role ID (optional. Clone the repo and uncomment the section where you put the ROLE_ID)
+- Discord Channel ID for announcements
+- Optional: Role ID and User IDs for pings (see `.env.example`)
 
 ### Installation
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/USERNAME/REPOSITORY_NAME # Replace with actual URL
    cd dandys-world-bot
    ```
 
 2. **Install dependencies**
+   Recommended: Create a virtual environment first.
    ```bash
-   uv add discord.py aiohttp beautifulsoup4 python-dotenv trafilatura
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
+   Then install from `requirements.txt`:
+   ```bash
+   pip install -r requirements.txt
+   ```
+   Alternatively, if you use `uv`:
+   ```bash
+   uv pip install -r requirements.txt
+   # or uv add discord.py aiohttp beautifulsoup4 python-dotenv trafilatura
    ```
 
 3. **Environment Setup**
@@ -111,9 +133,17 @@ dandys-world-bot/
 ├── utils.py            # Utility functions and logging
 ├── test_image.py       # Image functionality testing
 ├── .env.example        # Environment variables template
-├── readme.md          # Project documentation
-└── logs/              # Log files directory
+├── requirements.txt    # Python package dependencies
+├── README.md           # Project documentation (this file)
+├── docs/               # GitHub Pages site files
+│   ├── index.html
+│   └── style.css
+└── logs/               # Log files directory (created automatically)
 ```
+
+## 🌐 GitHub Pages Site
+
+The `docs/` directory contains the files for a GitHub Pages website that provides a user-friendly overview of the bot. To view it locally, open `docs/index.html` in your browser. When pushed to GitHub, it can be configured to be served as a project website.
 
 ## 🔧 Development
 
