@@ -1,4 +1,4 @@
-# TOTB-checker
+
 # Dandy's World Discord Bot
 
 A Python Discord bot that monitors the Daily Twisted Board from the Dandy's World wiki and sends automated notifications to Discord channels when the twisted character changes, complete with character images.
