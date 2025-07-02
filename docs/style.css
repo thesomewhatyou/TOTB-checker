@@ -1,7 +1,12 @@
 /* General Body Styles */
 body {
+feat/dandys-world-bot-initial-setup
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
+main
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -27,13 +32,23 @@ header {
 
 header h1 {
     margin: 0;
+feat/dandys-world-bot-initial-setup
+    font-family: 'Nunito', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+main
     font-size: 2.5rem;
     font-weight: 700;
 }
 
 header .subtitle {
+feat/dandys-world-bot-initial-setup
+    font-family: 'Nunito', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400; /* Adjusted for Nunito if it's lighter */
+
     font-size: 1.2rem;
     font-weight: 300;
+main
     margin-top: 0.5rem;
 }
 
@@ -41,6 +56,10 @@ header .subtitle {
 nav {
     background: #2c3a41; /* Slightly lighter than header */
     color: #fff;
+feat/dandys-world-bot-initial-setup
+    font-family: 'Nunito', 'Roboto', sans-serif;
+
+main
     padding: 0.8rem 0;
     position: sticky;
     top: 0;
@@ -89,13 +108,24 @@ main section:last-child {
 main section h2 {
     text-align: center;
     margin-bottom: 2rem;
+feat/dandys-world-bot-initial-setup
+    font-family: 'Nunito', 'Roboto', sans-serif;
+    font-size: 2.2rem; /* Slightly larger for more friendly headings */
+    color: #35424a;
+    font-weight: 700;
+
     font-size: 2rem;
     color: #35424a;
+main
 }
 
 /* Hero Section */
 #hero {
+feat/dandys-world-bot-initial-setup
+    background: linear-gradient(rgba(53, 66, 74, 0.8), rgba(53, 66, 74, 0.8)), url('https://via.placeholder.com/1500x600.png?text=Twisted+Oracle+Bot') no-repeat center center/cover; /* Replace with an actual cool background */
+
     background: linear-gradient(rgba(53, 66, 74, 0.8), rgba(53, 66, 74, 0.8)), url('https://via.placeholder.com/1500x600.png?text=Dandy%27s+World+Bot+Background') no-repeat center center/cover; /* Replace with an actual cool background */
+main
     color: #fff;
     text-align: center;
     padding: 4rem 0;
@@ -146,9 +176,17 @@ main section h2 {
 }
 
 .feature-item h3 {
+feat/dandys-world-bot-initial-setup
+    font-family: 'Nunito', 'Roboto', sans-serif;
     color: #e8491d;
     margin-top: 0;
     margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+
+    color: #e8491d;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+main
 }
 
 /* Alternate Background Sections */
@@ -178,6 +216,20 @@ main section h2 {
     word-break: break-all;
 }
 
+feat/dandys-world-bot-initial-setup
+/* Inline code style for quick start guide */
+.code-inline {
+    background-color: #e7e9eb;
+    color: #2c3a41;
+    padding: 0.2em 0.4em;
+    margin: 0 0.2em;
+    font-size: 0.85em;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+main
 pre.code-block code { /* For the .env example */
     white-space: pre;
     display: block;
