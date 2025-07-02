@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dandy's World Twisted Oracle Bot</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🔮 Dandy's World Twisted Oracle Bot 🔮</h1>
+            <p class="subtitle">Your Friendly Automated Guide to the Daily Twisted Character!</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#features">Cool Features</a></li>
+                <li><a href="#quick-start">Get Started</a></li>
+                <li><a href="#how-it-works">How it Works</a></li>
+                <li><a href="#support">Questions?</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h2>Never Miss a Twisted Update Again!</h2>
+                <p>This bot is your personal Dandy's World informant! It watches the official wiki for the Daily Twisted Board and alerts your Discord server the moment the character changes. You'll even see a picture!</p>
+                <a href="https://github.com/thesomewhatyou/TOTB-checker" class="cta-button" id="github-repo-link">See the Code on GitHub</a>
+            </div>
+        </section>
+
+        <section id="features">
+            <div class="container">
+                <h2>✨ Cool Features</h2>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <h3>Always Watching</h3>
+                        <p>Checks the Twisted Board every hour, right on the dot.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Smart Alerts</h3>
+                        <p>Only pings when the character *actually* changes or the timer resets. No unnecessary spam!</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Picture Perfect</h3>
+                        <p>Grabs character images from the wiki to show you exactly who's Twisted.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Timed Just Right</h3>
+                        <p>Waits an extra minute for those midnight UTC updates (often 8 PM EST) to get the latest info.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Ping Who You Want</h3>
+                        <p>Tell it to ping a specific role or your friends when there's an update.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Keeps on Chugging</h3>
+                        <p>If the wiki is down or something odd happens, it tries its best to keep running smoothly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="quick-start" class="alternate-bg">
+            <div class="container">
+                <h2>🚀 Get Started Quickly!</h2>
+                <p>Want this bot for your own Dandy's World server? It's easier than you think!</p>
+
+                <h3>What You'll Need:</h3>
+                <ul>
+                    <li>A computer that can run Python (most can!). If you need Python, grab it from <a href="https://www.python.org/downloads/" target="_blank">python.org</a> (version 3.8 or newer).</li>
+                    <li>A "Bot Token" from Discord (think of it as your bot's secret password).</li>
+                    <li>The "Channel ID" from Discord for where you want announcements.</li>
+                </ul>
+
+                <h3>Easy Setup Steps:</h3>
+                <ol>
+                    <li><strong>Download the Bot Files:</strong> Head to the <a href="https://github.com/thesomewhatyou/TOTB-checker" target="_blank" id="github-repo-link-qs">bot's GitHub page</a>. Click the green "Code" button, then "Download ZIP." Unzip it on your computer.</li>
+                    <li><strong>Install a Few Tools:</strong> Open a command prompt (or Terminal on Mac/Linux) in the bot's folder. Type: <code class="code-inline">pip install -r requirements.txt</code> and press Enter.</li>
+                    <li><strong>Create Your Settings File:</strong>
+                        <ul>
+                            <li>Find the file named <code>.env.example</code> in the bot's folder.</li>
+                            <li>Make a copy and rename it to just <code>.env</code> (yep, starts with a dot!).</li>
+                            <li>Open <code>.env</code> with a text editor (like Notepad).</li>
+                            <li>Fill in your <code>DISCORD_BOT_TOKEN</code> and <code>DISCORD_CHANNEL_ID</code>. You can also add optional role/user IDs to ping.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Run the Bot:</strong> In your command prompt/terminal, type: <code class="code-inline">python bot.py</code> and hit Enter!</li>
+                </ol>
+                <p><strong>Need help creating your bot on Discord and getting the Token/Channel ID?</strong> The <a href="https://github.com/thesomewhatyou/TOTB-checker/blob/main/README.md#making-your-bot-on-discord-the-important-bits" target="_blank">README file on GitHub</a> has a detailed step-by-step guide for this tricky part!</p>
+            </div>
+        </section>
+
+        <section id="how-it-works">
+            <div class="container">
+                <h2>⚙️ How It Works (The Magic!)</h2>
+                <p>So, what's this bot doing behind the scenes?</p>
+                <ul>
+                    <li><strong>Checks the Clock:</strong> Every hour, on the hour, it visits the <a href="https://dandys-world-robloxhorror.fandom.com/wiki/Daily_Twisted_Board" target="_blank">Dandy's World Wiki's Twisted Board page</a>.</li>
+                    <li><strong>Midnight Smarts:</strong> It knows the update around midnight UTC (often 8 PM EST) is important, so it waits an extra minute to make sure it gets the very latest info.</li>
+                    <li><strong>No Spam Policy:</strong> It only sends an alert if the Twisted character is actually new, or if the board's timer has reset.</li>
+                    <li><strong>Info Getter:</strong> It carefully reads the page to find the character's name, their picture, and any info about when the next change is due.</li>
+                    <li><strong>Pretty Posts:</strong> It then crafts a nice-looking message for your Discord channel with all these details. If you've told it to, it'll also ping any roles or specific friends you listed!</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="support" class="alternate-bg">
+            <div class="container">
+                <h2>🤔 Questions, Bugs, or Bright Ideas?</h2>
+                <p>If you run into trouble, have a question, or want to suggest a cool new feature, the best place to go is the project's "Issues" page on GitHub.</p>
+                <a href="https://github.com/thesomewhatyou/TOTB-checker/issues" class="cta-button" id="github-issues-link">Report an Issue / Suggest a Feature</a>
+                <p style="margin-top: 1rem;">This is a fan-made project, and community feedback helps make it better!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Dandy's World Twisted Oracle Bot. Licensed under the Unlicense License.</p>
+            <p>This bot is a fan project and is not affiliated with the Dandy's World game or its developers. All game content and images are property of their respective owners.</p>
+            <p class="small-text">Original bot logic by thesomewhatyou. Site and additional bot development by Jules from Google.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("current-year").textContent = new Date().getFullYear();
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // No longer need dynamic repoPath updates as links are hardcoded
+        // const repoPath = "thesomewhatyou/TOTB-checker";
+        // const githubLink = document.getElementById('github-repo-link');
+        // if (githubLink) { // Assume it's already correct or will be manually set if structure changes
+        //     // githubLink.href = `https://github.com/${repoPath}`;
+        // }
+        // const issuesLink = document.getElementById('github-issues-link');
+        // if (issuesLink) { // Assume it's already correct
+        //     // issuesLink.href = `https://github.com/${repoPath}/issues`;
+        // }
+    </script>
+</body>
+</html>
