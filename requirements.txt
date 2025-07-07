@@ -1,0 +1,8 @@
+discord.py>=2.3.0
+aiohttp>=3.8.0
+beautifulsoup4>=4.12.0
+python-dotenv>=1.0.0
+trafilatura>=1.8.0
+
+# Note: This project uses pyproject.toml and uv for dependency management
+# To install dependencies, run: uv add discord.py aiohttp beautifulsoup4 python-dotenv trafilatura
