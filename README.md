@@ -93,17 +93,6 @@ The application is designed for containerized deployment:
 - Health checks via Discord connection status
 - Error handling prevents bot crashes
 
-## Changelog
-- July 01, 2025. Initial setup
-- July 01, 2025. Removed duplicate announcement prevention - bot now announces every check regardless of whether the twisted character is the same as before
-- July 01, 2025. Added smart change detection - bot now only announces when twisted actually changes OR when timer resets with same twisted (indicating new daily cycle)
-- July 01, 2025. Added timer information parsing to detect when daily board resets
-- July 01, 2025. Updated announcement logic to be more intelligent about when to notify users
-- July 01, 2025. Added hardcoded environment variables for private deployment (DISCORD_CHANNEL_ID: 1381153101414924409, PING_ROLE_ID: 1381148457212841985)
-- July 01, 2025. Changed monitoring schedule from every 30 minutes to every hour on the exact hour, with time synchronization to eliminate delays
-- July 01, 2025. Added special 1-minute delay for 8 PM EST (midnight UTC) checks to account for board update timing
-- July 02, 2025. Added image attachment functionality - bot now extracts and displays Twisted character images from the wiki in Discord announcements
-
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
